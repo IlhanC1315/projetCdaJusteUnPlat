@@ -17,3 +17,8 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
     console.log("server backend démarré")
 })
+
+const fs = require('fs')
+
+const data = fs.readFileSync('./recettess.json', 'utf-8')
+console.log(data.recette.length)

@@ -1,0 +1,1124 @@
+{
+  "recettes": 
+  [
+    {
+      "recipeImage": "https://example.com/images/salade-caesar.jpg",
+      "recipeName": "Salade César",
+      "prep_time": "15 minutes",
+      "cook_time": "0 minutes",
+      "servings": 4,
+      "estimated_cost": 8,
+      "description": "Une délicieuse salade César avec croûtons maison et parmesan",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Salade",
+          "ingredient": [
+            {"ingredientName": "Laitue romaine", "measurementUnit": "têtes", "quantity": "2"},
+            {"ingredientName": "Parmesan", "measurementUnit": "g", "quantity": "100"},
+            {"ingredientName": "Croûtons", "measurementUnit": "g", "quantity": "80"}
+          ]
+        },
+        {
+          "nameEtape": "Sauce",
+          "ingredient": [
+            {"ingredientName": "Mayonnaise", "measurementUnit": "ml", "quantity": "100"},
+            {"ingredientName": "Ail", "measurementUnit": "gousses", "quantity": "2"},
+            {"ingredientName": "Anchois", "measurementUnit": "filets", "quantity": "4"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation salade", "numberEtape": 1, "instruction": "Laver et couper la laitue romaine en morceaux"},
+        {"namePrepEtape": "Sauce", "numberEtape": 2, "instruction": "Mélanger mayonnaise, ail écrasé et anchois"},
+        {"namePrepEtape": "Assemblage", "numberEtape": 3, "instruction": "Mélanger salade avec sauce, ajouter parmesan et croûtons"}
+      ],
+      "chefTips": "Utilisez du parmesan fraîchement râpé pour plus de saveur",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "280"},
+        {"nameValues": "Protéines", "values": "12g"},
+        {"nameValues": "Glucides", "values": "15g"}
+      ],
+      "category": "salade",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Italie"
+    },
+    {
+      "recipeImage": "https://example.com/images/boeuf-bourguignon.jpg",
+      "recipeName": "Bœuf Bourguignon",
+      "prep_time": "30 minutes",
+      "cook_time": "3 heures",
+      "servings": 6,
+      "estimated_cost": 25,
+      "description": "Le plat traditionnel français mijoté au vin rouge",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Viande",
+          "ingredient": [
+            {"ingredientName": "Bœuf à braiser", "measurementUnit": "kg", "quantity": "1.5"},
+            {"ingredientName": "Lardons", "measurementUnit": "g", "quantity": "200"}
+          ]
+        },
+        {
+          "nameEtape": "Légumes",
+          "ingredient": [
+            {"ingredientName": "Carottes", "measurementUnit": "pièces", "quantity": "4"},
+            {"ingredientName": "Oignons", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Champignons", "measurementUnit": "g", "quantity": "300"}
+          ]
+        },
+        {
+          "nameEtape": "Liquides",
+          "ingredient": [
+            {"ingredientName": "Vin rouge", "measurementUnit": "ml", "quantity": "750"},
+            {"ingredientName": "Bouillon de bœuf", "measurementUnit": "ml", "quantity": "500"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Couper le bœuf en gros cubes, faire revenir les lardons"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Saisir la viande puis ajouter les légumes"},
+        {"namePrepEtape": "Mijotage", "numberEtape": 3, "instruction": "Ajouter le vin et bouillon, mijoter 3h à feu doux"}
+      ],
+      "chefTips": "Laissez mariner la viande dans le vin la veille pour plus de goût",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "420"},
+        {"nameValues": "Protéines", "values": "35g"},
+        {"nameValues": "Glucides", "values": "8g"}
+      ],
+      "category": "platsPrincipaux",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["30-60 min"],
+          "cook_time_filter": ["plus de 2h"],
+          "difficulty_filter": ["moyen"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/carpaccio.jpg",
+      "recipeName": "Carpaccio de Bœuf",
+      "prep_time": "20 minutes",
+      "cook_time": "0 minutes",
+      "servings": 4,
+      "estimated_cost": 18,
+      "description": "Fines tranches de bœuf cru à l'huile d'olive et parmesan",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Viande",
+          "ingredient": [
+            {"ingredientName": "Filet de bœuf", "measurementUnit": "g", "quantity": "400"},
+            {"ingredientName": "Roquette", "measurementUnit": "g", "quantity": "80"}
+          ]
+        },
+        {
+          "nameEtape": "Assaisonnement",
+          "ingredient": [
+            {"ingredientName": "Parmesan", "measurementUnit": "g", "quantity": "60"},
+            {"ingredientName": "Huile d'olive", "measurementUnit": "ml", "quantity": "60"},
+            {"ingredientName": "Citron", "measurementUnit": "pièce", "quantity": "1"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Congeler la viande 30min puis trancher finement"},
+        {"namePrepEtape": "Dressage", "numberEtape": 2, "instruction": "Disposer tranches sur assiettes avec roquette"},
+        {"namePrepEtape": "Assaisonnement", "numberEtape": 3, "instruction": "Arroser d'huile, citron et copeaux de parmesan"}
+      ],
+      "chefTips": "Utiliser uniquement de la viande de première qualité",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "220"},
+        {"nameValues": "Protéines", "values": "24g"},
+        {"nameValues": "Glucides", "values": "2g"}
+      ],
+      "category": "entrées",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Italie"
+    },
+    {
+      "recipeImage": "https://example.com/images/ratatouille.jpg",
+      "recipeName": "Ratatouille",
+      "prep_time": "25 minutes",
+      "cook_time": "45 minutes",
+      "servings": 6,
+      "estimated_cost": 10,
+      "description": "Mijoté de légumes du soleil de Provence",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Légumes",
+          "ingredient": [
+            {"ingredientName": "Aubergines", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Courgettes", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Poivrons", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Tomates", "measurementUnit": "pièces", "quantity": "4"}
+          ]
+        },
+        {
+          "nameEtape": "Aromates",
+          "ingredient": [
+            {"ingredientName": "Oignon", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Ail", "measurementUnit": "gousses", "quantity": "3"},
+            {"ingredientName": "Herbes de Provence", "measurementUnit": "c. à soupe", "quantity": "2"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Couper tous les légumes en dés"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Faire revenir oignon et ail, ajouter légumes"},
+        {"namePrepEtape": "Mijotage", "numberEtape": 3, "instruction": "Mijoter 40min avec herbes, rectifier assaisonnement"}
+      ],
+      "chefTips": "Faire dégorger aubergines au sel avant cuisson",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "95"},
+        {"nameValues": "Protéines", "values": "3g"},
+        {"nameValues": "Glucides", "values": "15g"}
+      ],
+      "category": "accompagnements",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["30-60 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/tiramisu.jpg",
+      "recipeName": "Tiramisu",
+      "prep_time": "25 minutes",
+      "cook_time": "0 minutes",
+      "servings": 8,
+      "estimated_cost": 12,
+      "description": "Le dessert italien classique au café et mascarpone",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Crème",
+          "ingredient": [
+            {"ingredientName": "Mascarpone", "measurementUnit": "g", "quantity": "500"},
+            {"ingredientName": "Œufs", "measurementUnit": "pièces", "quantity": "6"},
+            {"ingredientName": "Sucre", "measurementUnit": "g", "quantity": "100"}
+          ]
+        },
+        {
+          "nameEtape": "Base",
+          "ingredient": [
+            {"ingredientName": "Biscuits à la cuillère", "measurementUnit": "pièces", "quantity": "24"},
+            {"ingredientName": "Café fort", "measurementUnit": "ml", "quantity": "300"},
+            {"ingredientName": "Cacao en poudre", "measurementUnit": "g", "quantity": "20"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Crème", "numberEtape": 1, "instruction": "Mélanger jaunes d'œufs et sucre, incorporer mascarpone"},
+        {"namePrepEtape": "Blancs", "numberEtape": 2, "instruction": "Monter les blancs en neige et les incorporer délicatement"},
+        {"namePrepEtape": "Montage", "numberEtape": 3, "instruction": "Tremper biscuits dans café, alterner couches biscuits et crème"},
+        {"namePrepEtape": "Repos", "numberEtape": 4, "instruction": "Réfrigérer 4h minimum, saupoudrer de cacao avant service"}
+      ],
+      "chefTips": "Utilisez un café très fort et laissez reposer une nuit entière",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "380"},
+        {"nameValues": "Protéines", "values": "8g"},
+        {"nameValues": "Glucides", "values": "28g"}
+      ],
+      "category": "dessert",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["moyen"]
+        }
+      ],
+      "origin": "Italie"
+    },
+    {
+      "recipeImage": "https://example.com/images/veloute-potiron.jpg",
+      "recipeName": "Velouté de Potiron",
+      "prep_time": "20 minutes",
+      "cook_time": "40 minutes",
+      "servings": 4,
+      "estimated_cost": 6,
+      "description": "Un velouté onctueux et réconfortant parfait pour l'automne",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Légumes",
+          "ingredient": [
+            {"ingredientName": "Potiron", "measurementUnit": "kg", "quantity": "1"},
+            {"ingredientName": "Pommes de terre", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Oignon", "measurementUnit": "pièce", "quantity": "1"}
+          ]
+        },
+        {
+          "nameEtape": "Assaisonnement",
+          "ingredient": [
+            {"ingredientName": "Bouillon de légumes", "measurementUnit": "ml", "quantity": "800"},
+            {"ingredientName": "Crème fraîche", "measurementUnit": "ml", "quantity": "100"},
+            {"ingredientName": "Muscade", "measurementUnit": "pincée", "quantity": "1"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Éplucher et couper potiron, pommes de terre et oignon"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Faire suer l'oignon, ajouter légumes et bouillon"},
+        {"namePrepEtape": "Mixage", "numberEtape": 3, "instruction": "Cuire 30min puis mixer, ajouter crème et muscade"}
+      ],
+      "chefTips": "Ajoutez une pointe de gingembre pour plus de caractère",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "150"},
+        {"nameValues": "Protéines", "values": "4g"},
+        {"nameValues": "Glucides", "values": "18g"}
+      ],
+      "category": "soupe_veloutes",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["30-60 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/pancakes.jpg",
+      "recipeName": "Pancakes Américains",
+      "prep_time": "10 minutes",
+      "cook_time": "15 minutes",
+      "servings": 4,
+      "estimated_cost": 5,
+      "description": "Des pancakes moelleux parfaits pour le petit-déjeuner",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Pâte",
+          "ingredient": [
+            {"ingredientName": "Farine", "measurementUnit": "g", "quantity": "200"},
+            {"ingredientName": "Œufs", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Lait", "measurementUnit": "ml", "quantity": "250"},
+            {"ingredientName": "Sucre", "measurementUnit": "g", "quantity": "30"},
+            {"ingredientName": "Levure chimique", "measurementUnit": "g", "quantity": "10"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Pâte", "numberEtape": 1, "instruction": "Mélanger ingrédients secs puis ajouter œufs et lait"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Cuire dans poêle beurrée 2-3min de chaque côté"}
+      ],
+      "chefTips": "Ne pas trop mélanger la pâte pour garder la texture moelleuse",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "220"},
+        {"nameValues": "Protéines", "values": "8g"},
+        {"nameValues": "Glucides", "values": "35g"}
+      ],
+      "category": "petitDej_brunch",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "États-Unis"
+    },
+    {
+      "recipeImage": "https://example.com/images/guacamole.jpg",
+      "recipeName": "Guacamole",
+      "prep_time": "10 minutes",
+      "cook_time": "0 minutes",
+      "servings": 6,
+      "estimated_cost": 8,
+      "description": "L'apéritif mexicain classique à base d'avocat",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Base",
+          "ingredient": [
+            {"ingredientName": "Avocats", "measurementUnit": "pièces", "quantity": "4"},
+            {"ingredientName": "Citron vert", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Oignon rouge", "measurementUnit": "pièce", "quantity": "0.5"}
+          ]
+        },
+        {
+          "nameEtape": "Assaisonnement",
+          "ingredient": [
+            {"ingredientName": "Tomate", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Coriandre", "measurementUnit": "g", "quantity": "20"},
+            {"ingredientName": "Piment jalapeño", "measurementUnit": "pièce", "quantity": "1"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Écraser les avocats à la fourchette"},
+        {"namePrepEtape": "Mélange", "numberEtape": 2, "instruction": "Ajouter citron, oignon, tomate et coriandre hachés"}
+      ],
+      "chefTips": "Servir immédiatement pour éviter que les avocats noircissent",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "160"},
+        {"nameValues": "Protéines", "values": "2g"},
+        {"nameValues": "Glucides", "values": "9g"}
+      ],
+      "category": "aperitif",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Mexique"
+    },
+    {
+      "recipeImage": "https://example.com/images/smoothie-banane.jpg",
+      "recipeName": "Smoothie Banane-Mangue",
+      "prep_time": "5 minutes",
+      "cook_time": "0 minutes",
+      "servings": 2,
+      "estimated_cost": 4,
+      "description": "Un smoothie tropical rafraîchissant et vitaminé",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Fruits",
+          "ingredient": [
+            {"ingredientName": "Bananes", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Mangue", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Lait de coco", "measurementUnit": "ml", "quantity": "200"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Mixage", "numberEtape": 1, "instruction": "Mixer tous les ingrédients jusqu'à obtenir une texture lisse"}
+      ],
+      "chefTips": "Utilisez des fruits congelés pour un smoothie plus épais",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "180"},
+        {"nameValues": "Protéines", "values": "3g"},
+        {"nameValues": "Glucides", "values": "35g"}
+      ],
+      "category": "boisson",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Tropical"
+    },
+    {
+      "recipeImage": "https://example.com/images/sauce-tomate.jpg",
+      "recipeName": "Sauce Tomate Basilic",
+      "prep_time": "15 minutes",
+      "cook_time": "30 minutes",
+      "servings": 6,
+      "estimated_cost": 5,
+      "description": "Une sauce tomate maison parfumée au basilic",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Base",
+          "ingredient": [
+            {"ingredientName": "Tomates", "measurementUnit": "kg", "quantity": "1.5"},
+            {"ingredientName": "Oignon", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Ail", "measurementUnit": "gousses", "quantity": "3"}
+          ]
+        },
+        {
+          "nameEtape": "Herbes",
+          "ingredient": [
+            {"ingredientName": "Basilic frais", "measurementUnit": "g", "quantity": "30"},
+            {"ingredientName": "Huile d'olive", "measurementUnit": "ml", "quantity": "50"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Faire suer oignon et ail dans l'huile"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Ajouter tomates concassées, mijoter 30min"},
+        {"namePrepEtape": "Finition", "numberEtape": 3, "instruction": "Ajouter basilic ciselé en fin de cuisson"}
+      ],
+      "chefTips": "Utilisez des tomates bien mûres pour plus de saveur",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "80"},
+        {"nameValues": "Protéines", "values": "2g"},
+        {"nameValues": "Glucides", "values": "8g"}
+      ],
+      "category": "sauce",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["30-60 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Italie"
+    },
+    {
+      "recipeImage": "https://example.com/images/burger.jpg",
+      "recipeName": "Burger Classique",
+      "prep_time": "20 minutes",
+      "cook_time": "15 minutes",
+      "servings": 4,
+      "estimated_cost": 12,
+      "description": "Un burger maison avec steak haché et crudités",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Viande",
+          "ingredient": [
+            {"ingredientName": "Steak haché", "measurementUnit": "g", "quantity": "600"},
+            {"ingredientName": "Pains à burger", "measurementUnit": "pièces", "quantity": "4"}
+          ]
+        },
+        {
+          "nameEtape": "Garniture",
+          "ingredient": [
+            {"ingredientName": "Salade", "measurementUnit": "feuilles", "quantity": "8"},
+            {"ingredientName": "Tomates", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Cheddar", "measurementUnit": "tranches", "quantity": "4"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Former 4 steaks avec la viande hachée"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Cuire les steaks 3-4min de chaque côté"},
+        {"namePrepEtape": "Assemblage", "numberEtape": 3, "instruction": "Monter les burgers avec tous les ingrédients"}
+      ],
+      "chefTips": "Ne pas trop presser les steaks pendant la cuisson",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "520"},
+        {"nameValues": "Protéines", "values": "28g"},
+        {"nameValues": "Glucides", "values": "35g"}
+      ],
+      "category": "snack_fastFood",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "États-Unis"
+    },
+    {
+      "recipeImage": "https://example.com/images/riz-pilaf.jpg",
+      "recipeName": "Riz Pilaf",
+      "prep_time": "10 minutes",
+      "cook_time": "20 minutes",
+      "servings": 4,
+      "estimated_cost": 3,
+      "description": "Un accompagnement de riz parfumé aux épices",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Base",
+          "ingredient": [
+            {"ingredientName": "Riz basmati", "measurementUnit": "g", "quantity": "300"},
+            {"ingredientName": "Bouillon de volaille", "measurementUnit": "ml", "quantity": "500"},
+            {"ingredientName": "Oignon", "measurementUnit": "pièce", "quantity": "1"}
+          ]
+        },
+        {
+          "nameEtape": "Épices",
+          "ingredient": [
+            {"ingredientName": "Curcuma", "measurementUnit": "c. à café", "quantity": "1"},
+            {"ingredientName": "Cardamome", "measurementUnit": "gousses", "quantity": "3"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Faire revenir l'oignon et les épices"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Ajouter riz et bouillon, cuire 18min à couvert"}
+      ],
+      "chefTips": "Laisser reposer 5min avant de servir pour un riz parfait",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "180"},
+        {"nameValues": "Protéines", "values": "4g"},
+        {"nameValues": "Glucides", "values": "38g"}
+      ],
+      "category": "accompagnements",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Moyen-Orient"
+    },
+    {
+      "recipeImage": "https://example.com/images/foie-gras.jpg",
+      "recipeName": "Foie Gras Poêlé",
+      "prep_time": "15 minutes",
+      "cook_time": "10 minutes",
+      "servings": 4,
+      "estimated_cost": 45,
+      "description": "Une entrée raffinée pour les grandes occasions",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Principal",
+          "ingredient": [
+            {"ingredientName": "Foie gras cru", "measurementUnit": "g", "quantity": "400"},
+            {"ingredientName": "Pain d'épices", "measurementUnit": "tranches", "quantity": "4"}
+          ]
+        },
+        {
+          "nameEtape": "Accompagnement",
+          "ingredient": [
+            {"ingredientName": "Figues", "measurementUnit": "pièces", "quantity": "4"},
+            {"ingredientName": "Vinaigre balsamique", "measurementUnit": "ml", "quantity": "30"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Trancher le foie gras et assaisonner"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 2, "instruction": "Poêler 2min de chaque côté à feu vif"},
+        {"namePrepEtape": "Dressage", "numberEtape": 3, "instruction": "Servir sur pain d'épices avec figues"}
+      ],
+      "chefTips": "Ne pas ajouter de matière grasse, le foie gras rend sa graisse",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "480"},
+        {"nameValues": "Protéines", "values": "12g"},
+        {"nameValues": "Glucides", "values": "15g"}
+      ],
+      "category": "entrées",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["difficile"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/paella.jpg",
+      "recipeName": "Paella Valenciana",
+      "prep_time": "30 minutes",
+      "cook_time": "45 minutes",
+      "servings": 8,
+      "estimated_cost": 35,
+      "description": "La paella traditionnelle espagnole au poulet et fruits de mer",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Riz",
+          "ingredient": [
+            {"ingredientName": "Riz bomba", "measurementUnit": "g", "quantity": "400"},
+            {"ingredientName": "Safran", "measurementUnit": "g", "quantity": "0.5"},
+            {"ingredientName": "Bouillon de volaille", "measurementUnit": "ml", "quantity": "800"}
+          ]
+        },
+        {
+          "nameEtape": "Protéines",
+          "ingredient": [
+            {"ingredientName": "Poulet", "measurementUnit": "g", "quantity": "800"},
+            {"ingredientName": "Crevettes", "measurementUnit": "g", "quantity": "300"},
+            {"ingredientName": "Moules", "measurementUnit": "g", "quantity": "500"}
+          ]
+        },
+        {
+          "nameEtape": "Légumes",
+          "ingredient": [
+            {"ingredientName": "Haricots verts", "measurementUnit": "g", "quantity": "200"},
+            {"ingredientName": "Poivrons", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Tomates", "measurementUnit": "pièces", "quantity": "2"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Découper poulet et légumes, préparer bouillon safran"},
+        {"namePrepEtape": "Cuisson viandes", "numberEtape": 2, "instruction": "Faire revenir poulet puis ajouter légumes"},
+        {"namePrepEtape": "Ajout riz", "numberEtape": 3, "instruction": "Incorporer riz et bouillon, cuire 20min"},
+        {"namePrepEtape": "Fruits de mer", "numberEtape": 4, "instruction": "Ajouter fruits de mer 10min avant la fin"}
+      ],
+      "chefTips": "Ne pas remuer le riz pendant la cuisson pour avoir le socarrat",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "420"},
+        {"nameValues": "Protéines", "values": "32g"},
+        {"nameValues": "Glucides", "values": "45g"}
+      ],
+      "category": "pays",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["30-60 min"],
+          "cook_time_filter": ["30-60 min"],
+          "difficulty_filter": ["moyen"]
+        }
+      ],
+      "origin": "Espagne"
+    },
+    {
+      "recipeImage": "https://example.com/images/quiche-lorraine.jpg",
+      "recipeName": "Quiche Lorraine",
+      "prep_time": "25 minutes",
+      "cook_time": "40 minutes",
+      "servings": 6,
+      "estimated_cost": 8,
+      "description": "La quiche traditionnelle aux lardons et gruyère",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Pâte",
+          "ingredient": [
+            {"ingredientName": "Pâte brisée", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Lardons", "measurementUnit": "g", "quantity": "200"},
+            {"ingredientName": "Gruyère", "measurementUnit": "g", "quantity": "100"}
+          ]
+        },
+        {
+          "nameEtape": "Appareil",
+          "ingredient": [
+            {"ingredientName": "Œufs", "measurementUnit": "pièces", "quantity": "4"},
+            {"ingredientName": "Crème fraîche", "measurementUnit": "ml", "quantity": "200"},
+            {"ingredientName": "Lait", "measurementUnit": "ml", "quantity": "100"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Étaler la pâte dans un moule, faire revenir les lardons"},
+        {"namePrepEtape": "Appareil", "numberEtape": 2, "instruction": "Battre œufs, crème et lait, assaisonner"},
+        {"namePrepEtape": "Assemblage", "numberEtape": 3, "instruction": "Répartir lardons et gruyère, verser l'appareil"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 4, "instruction": "Cuire 35-40min à 180°C"}
+      ],
+      "chefTips": "Précuire la pâte 10min à blanc pour éviter qu'elle soit détrempée",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "320"},
+        {"nameValues": "Protéines", "values": "15g"},
+        {"nameValues": "Glucides", "values": "18g"}
+      ],
+      "category": "platsPrincipaux",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["30-60 min"],
+          "difficulty_filter": ["moyen"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/sushi.jpg",
+      "recipeName": "Sushi Saumon",
+      "prep_time": "45 minutes",
+      "cook_time": "20 minutes",
+      "servings": 4,
+      "estimated_cost": 25,
+      "description": "Sushi traditionnel au saumon frais",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Riz",
+          "ingredient": [
+            {"ingredientName": "Riz à sushi", "measurementUnit": "g", "quantity": "300"},
+            {"ingredientName": "Vinaigre de riz", "measurementUnit": "ml", "quantity": "50"},
+            {"ingredientName": "Sucre", "measurementUnit": "g", "quantity": "20"}
+          ]
+        },
+        {
+          "nameEtape": "Garniture",
+          "ingredient": [
+            {"ingredientName": "Saumon frais", "measurementUnit": "g", "quantity": "300"},
+            {"ingredientName": "Algues nori", "measurementUnit": "feuilles", "quantity": "6"},
+            {"ingredientName": "Wasabi", "measurementUnit": "g", "quantity": "20"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Riz", "numberEtape": 1, "instruction": "Cuire le riz puis l'assaisonner au vinaigre"},
+        {"namePrepEtape": "Préparation", "numberEtape": 2, "instruction": "Découper le saumon en lamelles fines"},
+        {"namePrepEtape": "Façonnage", "numberEtape": 3, "instruction": "Former les sushi avec riz et saumon"}
+      ],
+      "chefTips": "Utilisez du poisson de qualité sashimi uniquement",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "280"},
+        {"nameValues": "Protéines", "values": "18g"},
+        {"nameValues": "Glucides", "values": "35g"}
+      ],
+      "category": "pays",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["30-60 min"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["difficile"]
+        }
+      ],
+      "origin": "Japon"
+    },
+    {
+      "recipeImage": "https://example.com/images/tarte-tatin.jpg",
+      "recipeName": "Tarte Tatin",
+      "prep_time": "30 minutes",
+      "cook_time": "45 minutes",
+      "servings": 8,
+      "estimated_cost": 10,
+      "description": "La célèbre tarte aux pommes caramélisées renversée",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Pommes",
+          "ingredient": [
+            {"ingredientName": "Pommes", "measurementUnit": "kg", "quantity": "1.5"},
+            {"ingredientName": "Sucre", "measurementUnit": "g", "quantity": "150"},
+            {"ingredientName": "Beurre", "measurementUnit": "g", "quantity": "80"}
+          ]
+        },
+        {
+          "nameEtape": "Pâte",
+          "ingredient": [
+            {"ingredientName": "Pâte feuilletée", "measurementUnit": "pièce", "quantity": "1"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Caramel", "numberEtape": 1, "instruction": "Faire un caramel avec sucre et beurre dans le moule"},
+        {"namePrepEtape": "Pommes", "numberEtape": 2, "instruction": "Disposer pommes pelées dans le caramel"},
+        {"namePrepEtape": "Pâte", "numberEtape": 3, "instruction": "Recouvrir de pâte, rentrer les bords"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 4, "instruction": "Cuire 35min à 200°C puis retourner"}
+      ],
+      "chefTips": "Attendre 10min avant de démouler pour éviter que le caramel coule",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "290"},
+        {"nameValues": "Protéines", "values": "3g"},
+        {"nameValues": "Glucides", "values": "45g"}
+      ],
+      "category": "dessert",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["30-60 min"],
+          "cook_time_filter": ["30-60 min"],
+          "difficulty_filter": ["moyen"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/gazpacho.jpg",
+      "recipeName": "Gazpacho",
+      "prep_time": "20 minutes",
+      "cook_time": "0 minutes",
+      "servings": 4,
+      "estimated_cost": 8,
+      "description": "Soupe froide espagnole aux légumes d'été",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Légumes",
+          "ingredient": [
+            {"ingredientName": "Tomates", "measurementUnit": "kg", "quantity": "1"},
+            {"ingredientName": "Concombre", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Poivron rouge", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Oignon rouge", "measurementUnit": "pièce", "quantity": "0.5"}
+          ]
+        },
+        {
+          "nameEtape": "Assaisonnement",
+          "ingredient": [
+            {"ingredientName": "Ail", "measurementUnit": "gousses", "quantity": "2"},
+            {"ingredientName": "Huile d'olive", "measurementUnit": "ml", "quantity": "60"},
+            {"ingredientName": "Vinaigre de xérès", "measurementUnit": "ml", "quantity": "30"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Éplucher et couper grossièrement tous les légumes"},
+        {"namePrepEtape": "Mixage", "numberEtape": 2, "instruction": "Mixer tous ingrédients jusqu'à consistance lisse"},
+        {"namePrepEtape": "Repos", "numberEtape": 3, "instruction": "Réfrigérer 2h minimum avant de servir"}
+      ],
+      "chefTips": "Passer au chinois pour une texture plus fine si désiré",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "120"},
+        {"nameValues": "Protéines", "values": "3g"},
+        {"nameValues": "Glucides", "values": "12g"}
+      ],
+      "category": "soupe_veloutes",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Espagne"
+    },
+    {
+      "recipeImage": "https://example.com/images/croissant.jpg",
+      "recipeName": "Croissants",
+      "prep_time": "3 heures",
+      "cook_time": "20 minutes",
+      "servings": 8,
+      "estimated_cost": 6,
+      "description": "Les croissants français traditionnels feuilletés",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Pâte",
+          "ingredient": [
+            {"ingredientName": "Farine", "measurementUnit": "g", "quantity": "500"},
+            {"ingredientName": "Lait", "measurementUnit": "ml", "quantity": "250"},
+            {"ingredientName": "Levure boulangère", "measurementUnit": "g", "quantity": "10"},
+            {"ingredientName": "Sucre", "measurementUnit": "g", "quantity": "50"}
+          ]
+        },
+        {
+          "nameEtape": "Beurrage",
+          "ingredient": [
+            {"ingredientName": "Beurre", "measurementUnit": "g", "quantity": "250"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Pâte", "numberEtape": 1, "instruction": "Pétrir pâte et laisser lever 1h"},
+        {"namePrepEtape": "Beurrage", "numberEtape": 2, "instruction": "Incorporer beurre en 3 tours avec repos"},
+        {"namePrepEtape": "Façonnage", "numberEtape": 3, "instruction": "Découper triangles et rouler en croissants"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 4, "instruction": "Laisser lever 2h puis cuire 15-20min à 200°C"}
+      ],
+      "chefTips": "Le beurre et la pâte doivent avoir la même consistance pour le feuilletage",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "380"},
+        {"nameValues": "Protéines", "values": "8g"},
+        {"nameValues": "Glucides", "values": "42g"}
+      ],
+      "category": "petitDej_brunch",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["plus de 2h"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["difficile"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/hummus.jpg",
+      "recipeName": "Hummus",
+      "prep_time": "15 minutes",
+      "cook_time": "0 minutes",
+      "servings": 6,
+      "estimated_cost": 4,
+      "description": "Purée de pois chiches du Moyen-Orient",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Base",
+          "ingredient": [
+            {"ingredientName": "Pois chiches cuits", "measurementUnit": "g", "quantity": "400"},
+            {"ingredientName": "Tahini", "measurementUnit": "ml", "quantity": "60"},
+            {"ingredientName": "Citron", "measurementUnit": "pièces", "quantity": "2"}
+          ]
+        },
+        {
+          "nameEtape": "Assaisonnement",
+          "ingredient": [
+            {"ingredientName": "Ail", "measurementUnit": "gousses", "quantity": "2"},
+            {"ingredientName": "Huile d'olive", "measurementUnit": "ml", "quantity": "40"},
+            {"ingredientName": "Cumin", "measurementUnit": "c. à café", "quantity": "1"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Mixage", "numberEtape": 1, "instruction": "Mixer pois chiches avec tahini et jus de citron"},
+        {"namePrepEtape": "Assaisonnement", "numberEtape": 2, "instruction": "Ajouter ail, cumin et huile d'olive"},
+        {"namePrepEtape": "Texture", "numberEtape": 3, "instruction": "Ajuster consistance avec eau de cuisson"}
+      ],
+      "chefTips": "Enlever la peau des pois chiches pour un hummus plus lisse",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "180"},
+        {"nameValues": "Protéines", "values": "8g"},
+        {"nameValues": "Glucides", "values": "20g"}
+      ],
+      "category": "aperitif",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Moyen-Orient"
+    },
+    {
+      "recipeImage": "https://example.com/images/chocolat-chaud.jpg",
+      "recipeName": "Chocolat Chaud Viennois",
+      "prep_time": "10 minutes",
+      "cook_time": "10 minutes",
+      "servings": 2,
+      "estimated_cost": 5,
+      "description": "Chocolat chaud crémeux avec chantilly",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Chocolat",
+          "ingredient": [
+            {"ingredientName": "Chocolat noir", "measurementUnit": "g", "quantity": "200"},
+            {"ingredientName": "Lait", "measurementUnit": "ml", "quantity": "400"},
+            {"ingredientName": "Sucre", "measurementUnit": "g", "quantity": "30"}
+          ]
+        },
+        {
+          "nameEtape": "Chantilly",
+          "ingredient": [
+            {"ingredientName": "Crème liquide", "measurementUnit": "ml", "quantity": "100"},
+            {"ingredientName": "Sucre glace", "measurementUnit": "g", "quantity": "15"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Chocolat", "numberEtape": 1, "instruction": "Faire fondre chocolat avec un peu de lait"},
+        {"namePrepEtape": "Mélange", "numberEtape": 2, "instruction": "Ajouter reste du lait chaud progressivement"},
+        {"namePrepEtape": "Chantilly", "numberEtape": 3, "instruction": "Monter crème en chantilly, servir sur chocolat"}
+      ],
+      "chefTips": "Utiliser un chocolat de qualité avec au moins 70% de cacao",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "420"},
+        {"nameValues": "Protéines", "values": "12g"},
+        {"nameValues": "Glucides", "values": "35g"}
+      ],
+      "category": "boisson",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Autriche"
+    },
+    {
+      "recipeImage": "https://example.com/images/mayonnaise.jpg",
+      "recipeName": "Mayonnaise Maison",
+      "prep_time": "10 minutes",
+      "cook_time": "0 minutes",
+      "servings": 8,
+      "estimated_cost": 3,
+      "description": "Mayonnaise traditionnelle faite maison",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Base",
+          "ingredient": [
+            {"ingredientName": "Jaunes d'œufs", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Moutarde", "measurementUnit": "c. à café", "quantity": "1"},
+            {"ingredientName": "Huile neutre", "measurementUnit": "ml", "quantity": "250"}
+          ]
+        },
+        {
+          "nameEtape": "Assaisonnement",
+          "ingredient": [
+            {"ingredientName": "Vinaigre", "measurementUnit": "ml", "quantity": "15"},
+            {"ingredientName": "Sel", "measurementUnit": "pincée", "quantity": "1"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Base", "numberEtape": 1, "instruction": "Mélanger jaunes d'œufs et moutarde"},
+        {"namePrepEtape": "Émulsion", "numberEtape": 2, "instruction": "Incorporer huile goutte à goutte en fouettant"},
+        {"namePrepEtape": "Finition", "numberEtape": 3, "instruction": "Ajouter vinaigre et sel, ajuster consistance"}
+      ],
+      "chefTips": "Tous les ingrédients doivent être à température ambiante",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "180"},
+        {"nameValues": "Protéines", "values": "1g"},
+        {"nameValues": "Glucides", "values": "0g"}
+      ],
+      "category": "sauce",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["pas de cuisson"],
+          "difficulty_filter": ["moyen"]
+        }
+      ],
+      "origin": "France"
+    },
+    {
+      "recipeImage": "https://example.com/images/tacos.jpg",
+      "recipeName": "Tacos au Bœuf",
+      "prep_time": "20 minutes",
+      "cook_time": "15 minutes",
+      "servings": 4,
+      "estimated_cost": 12,
+      "description": "Tacos mexicains avec viande épicée et garnitures fraîches",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Viande",
+          "ingredient": [
+            {"ingredientName": "Bœuf haché", "measurementUnit": "g", "quantity": "500"},
+            {"ingredientName": "Oignon", "measurementUnit": "pièce", "quantity": "1"},
+            {"ingredientName": "Épices mexicaines", "measurementUnit": "c. à soupe", "quantity": "2"}
+          ]
+        },
+        {
+          "nameEtape": "Garniture",
+          "ingredient": [
+            {"ingredientName": "Tortillas", "measurementUnit": "pièces", "quantity": "8"},
+            {"ingredientName": "Salade", "measurementUnit": "g", "quantity": "100"},
+            {"ingredientName": "Tomates", "measurementUnit": "pièces", "quantity": "2"},
+            {"ingredientName": "Crème fraîche", "measurementUnit": "ml", "quantity": "100"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Viande", "numberEtape": 1, "instruction": "Faire revenir oignon puis ajouter viande et épices"},
+        {"namePrepEtape": "Préparation", "numberEtape": 2, "instruction": "Réchauffer tortillas, préparer garnitures"},
+        {"namePrepEtape": "Assemblage", "numberEtape": 3, "instruction": "Garnir tortillas avec viande et accompagnements"}
+      ],
+      "chefTips": "Réchauffer les tortillas à sec pour plus de souplesse",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "380"},
+        {"nameValues": "Protéines", "values": "22g"},
+        {"nameValues": "Glucides", "values": "28g"}
+      ],
+      "category": "snack_fastFood",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["moins de 30 min"],
+          "cook_time_filter": ["moins de 30 min"],
+          "difficulty_filter": ["facile"]
+        }
+      ],
+      "origin": "Mexique"
+    },
+    {
+      "recipeImage": "https://example.com/images/gratin-dauphinois.jpg",
+      "recipeName": "Gratin Dauphinois",
+      "prep_time": "30 minutes",
+      "cook_time": "90 minutes",
+      "servings": 6,
+      "estimated_cost": 8,
+      "description": "Le gratin de pommes de terre traditionnel à la crème",
+      "ingredientEtapes": [
+        {
+          "nameEtape": "Pommes de terre",
+          "ingredient": [
+            {"ingredientName": "Pommes de terre", "measurementUnit": "kg", "quantity": "1.5"},
+            {"ingredientName": "Ail", "measurementUnit": "gousses", "quantity": "2"}
+          ]
+        },
+        {
+          "nameEtape": "Crème",
+          "ingredient": [
+            {"ingredientName": "Crème liquide", "measurementUnit": "ml", "quantity": "400"},
+            {"ingredientName": "Lait", "measurementUnit": "ml", "quantity": "200"},
+            {"ingredientName": "Muscade", "measurementUnit": "pincée", "quantity": "1"}
+          ]
+        }
+      ],
+      "prepEtape": [
+        {"namePrepEtape": "Préparation", "numberEtape": 1, "instruction": "Éplucher et couper pommes de terre en fines rondelles"},
+        {"namePrepEtape": "Assaisonnement", "numberEtape": 2, "instruction": "Frotter plat avec ail, disposer pommes de terre"},
+        {"namePrepEtape": "Cuisson", "numberEtape": 3, "instruction": "Verser crème et lait, cuire 1h30 à 180°C"}
+      ],
+      "chefTips": "Ne pas rincer les pommes de terre pour garder l'amidon",
+      "nutritionValues": [
+        {"nameValues": "Calories", "values": "280"},
+        {"nameValues": "Protéines", "values": "6g"},
+        {"nameValues": "Glucides", "values": "25g"}
+      ],
+      "category": "accompagnements",
+      "filterCategory": [
+        {
+          "prep_time_filter": ["30-60 min"],
+          "cook_time_filter": ["plus de 2h"],
+          "difficulty_filter": ["moyen"]
+        }
+      ],
+      "origin": "France"
+    }
+  ]
+}
