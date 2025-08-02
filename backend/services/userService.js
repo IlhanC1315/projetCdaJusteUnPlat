@@ -8,14 +8,13 @@ exports.getAllUsers = async () => {
     return await User.find()
 };
 
-exports.getUsersByEmail = async (email) => {
+exports.getUserByEmail = async (email) => {
     const user = await User.findOne({ email });
     if(!user) throw new Error('Utilisateur introuvable')
     return user;
 }
 
-exports.getUserById = async () => {
-    const id = req.params.id;
+exports.getUserById = async (id) => {
     const user = await User.findById(id)
     if(!user) throw new Error('Utilisateur introuvable')
     return user;
@@ -39,7 +38,7 @@ exports.updateManyUsers = async (filter, updateData) => {
 };
 
 exports.updateUserById = async (userId, updateData) => {
-    const result = await User.findByIdAndUpdate(userId ,{ updateData })
+    const result = await User.findByIdAndUpdate(userId ,updateData)
     return result
 };
 
@@ -73,78 +72,14 @@ exports.updateUserByAlias = async (alias, updateData) => {
     return user
 };
 
-exports.updateEmail = async (userId, newEmail) => {
-  const updatedUser = await User.findByIdAndUpdate(
-    userId,
-    { email: newEmail },
-    { new: true, runValidators: true }
-  );
-
-  if (!updatedUser) {
-    throw new Error("Utilisateur non trouvé");
-  }
-
-  return updatedUser;
-};
-
-exports.updateAlias = async (userId, newAlias) => {
+exports.updateUserField = async (userId, field, value) => {
     const updatedUser = await User.findByIdAndUpdate(
         userId,
-        { alias: newAlias },
+        { [field]: value },
         { new: true, runValidators: true }
     );
-    if(!updatedUser) {
-        throw new Error('Utilisateur non trouvé');
-    }
-    return updatedUser
-};
-
-exports.updateUsername = async (userId, newUsername) => {
-    const updatedUser = await User.findByIdAndUpdate(
-        userId,
-        { userName: newUsername },
-        { new: true, runValidators: true }
-    );
-    if(!updatedUser) {
-        throw new Error('Utilisateur non trouvé');
-    }
-    return updatedUser
-};
-
-exports.updateProfileImage = async (userId, newProfileImage) => {
-    const updatedUser = await User.findByIdAndUpdate(
-        userId,
-        { profileImage: newProfileImage },
-        { new: true, runValidators: true}
-    );
-    if(!updatedUser) {
-        throw new Error('Utilisateur non trouvé')
-    }
-    return updatedUser
-};
-
-exports.updateDescription = async (userId, newDescription) => {
-    const updatedUser = await User.findByIdAndUpdate(
-        userId,
-        { profileImage: newDescription },
-        { new: true, runValidators: true }
-    );
-    if(!updatedUser) {
-        throw new Error('Utilisateur non trouvé')
-    }
-    return updatedUser
-};
-
-exports.updatePassword = async (userId, newPassword) => {
-    const updatedUser = await User.findByIdAndUpdate(
-        userId,
-        { password: newPassword },
-        { new: true, runValidators: true }
-    );
-     if(!updatedUser) {
-        throw new Error('Utilisateur non trouvé')
-    }
-    return updatedUser
+    if (!updatedUser) throw new Error('Utilisateur non trouvé');
+    return updatedUser;
 };
 
 exports.deleteUserById = async (userId) => {
@@ -155,45 +90,54 @@ exports.deleteUserById = async (userId) => {
     return user;
 };
 
-exports.deleteUserByEmail = async (email) => {
-    const user = await User.findOneAndDelete({ email });
-    if(!user) {
-        throw new Error('Utilisateur non trouvé');
+exports.deleteManyUsersByField = async (field, values) => {
+    if (!Array.isArray(values) || values.length === 0) {
+        throw new Error("Liste invalide");
     }
-    return user;
-};
-
-exports.deleteUserByAlias = async (alias) => {
-    const user = await User.findOneAndDelete({ alias });
-    if(!user) {
-        throw new Error('Utilisateur non trouvé');
-    }
-    return user;
-};
-
-exports.deleteManyUsersById = async (usersId) => {
-    if(!Array.isArray(usersId) || usersId.length === 0) {
-        throw new Error("Liste d'ids invalide")
-    }
-    const result = await User.deleteMany({ _id: { $in: usersId } });
-    if(result.deletedCount === 0) {
-        throw new Error('Aucun utilisateur trouvé a supprimer')
-    }
-    return result
-};
-
-exports.deleteManyUsersByEmail = async (emails) => {
-    const result = await User.deleteMany({ email: { $in: emails } })
+    const result = await User.deleteMany({ [field]: { $in: values } })
     if (result.deletedCount === 0) {
-        throw new Error('Aucune utilisateur trouvé à supprimer')
-    }
-    return result
-}
-
-exports.deleteManyUsersByAlias = async (alias) => {
-    const result = await User.deleteMany({ alias: { $in: alias } })
-    if(result.deletedCount === 0) {
-        throw new Error('Aucun utilisateur trouvé à supprimer')
+        throw new Error(`Aucun utilisateur trouvé à supprimer par ${field}`);
     }
     return result;
+};
+
+exports.desactivateUser = async (userId) => {
+    const user = await User.findByIdAndUpdate(
+        userId,
+        { isActive: false },
+        { new: true }
+    )
+    if (!user) throw new Error('Utilisateur non trouvé');
+    return user;
+};
+
+exports.reactiveUser = async (userId) => {
+    const user = await User.findByIdAndUpdate(
+        userId,
+        { isActive: true },
+        { new: true }
+    )
+    if (!user) throw new Error('Utilisateur non trouvé');
+    return user;
+};
+
+exports.updateUserRole = async (userId, newRole) => {
+    const user = await User.findByIdAndUpdate(
+        userId,
+        { role: newRole },
+        { new: true }
+    )
+    if(!user) throw new Error('Utilisateur non trouvé');
+    return user
+};
+
+exports.searchUsers = async (query) => {
+    return await User.find({
+        $or: [
+            { userName: { $regex: query, $options: 'i' } },
+            { alias: { $regex: query, $options: 'i' } },
+            { email: { $regex: query, $options: 'i' } }
+        ],
+        isActive: true
+    });
 };

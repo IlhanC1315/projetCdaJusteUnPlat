@@ -31,16 +31,25 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
-    followers: { type: mongoose.Schema.Types.ObjectId, ref:'Followers' },
+    followers: [{ type: mongoose.Schema.Types.ObjectId, ref:'Followers' }],
     followersLength: {
         type: Number
     },
-    following: { type: mongoose.Schema.Types.ObjectId, ref:'Following' },
+    following: [{ type: mongoose.Schema.Types.ObjectId, ref:'Following' }],
     followingLength: {
         type: Number
     },
-    recipeListe: {  },
+    recipeListe: [{ type: mongoose.Schema.Types.ObjectId, ref: "UserRecipeList" }],
     userUrl: {
         type: String
+    },
+    isActive: {
+        type: Boolean,
+        default: true
+    },
+    role: {
+    type: String,
+    enum: ['user', 'admin', 'moderator'],
+    default: 'user'
     }
-})
+});
