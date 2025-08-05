@@ -1,7 +1,8 @@
 const User = require('../models/UserSchema')
 
 exports.createUser = async (data) => {
-    return await User.create(data)
+    const user = new User(data);
+    return await user.save();
 };
 
 exports.getAllUsers = async () => {
