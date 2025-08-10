@@ -3,8 +3,12 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db')
 const app = express();
+const passport = require('./config/passport');
+require('./config/passport')(passport);
 app.use(cors());
 app.use(bodyParser.json());
+app.use(passport.initialize());
+app.use('api/auth', require('./routes/auth.routes'));
 
 connectDB();
 

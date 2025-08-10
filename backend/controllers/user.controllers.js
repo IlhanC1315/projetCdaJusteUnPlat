@@ -2,8 +2,20 @@ const userService = require('../services/userService');
 
 exports.create = async (req, res, next) => {
     try {
-        const user = await userService.createUser(req.body);
-        res.status(201).json(user);
+      const { email } = req.body;
+
+      const existingUser = await userService.getUserByEmail(email)
+      if(existingUser) {
+        return res.status(400).json({ message: 'Cet email est déja utilisé.'})
+      }
+      const user = await userService.createUser(req.body);
+      
+      const { password, ...safeUser } = user.toObject();
+
+      res.status(201).json({
+        message: 'Utilisateur créé avec succés.',
+        user: safeUser
+      });
     } catch (err) {
         next(err);
     }
