@@ -23,7 +23,7 @@ export class Login {
     this.authService.login(this.email, this.password).subscribe({
       next: () => {
         this.loading.set(false);
-        this.router.navigate([''])
+        this.router.navigate(['/accueil'])
         alert('Connecté')
       },
       error: () => {

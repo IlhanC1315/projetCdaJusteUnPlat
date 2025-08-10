@@ -1,10 +1,11 @@
 import { Component, inject} from '@angular/core';
 import { Auth } from '../service/auth';
 import { HttpClient } from '@angular/common/http';
+import { Header } from '../header/header';
 
 @Component({
   selector: 'app-accueil',
-  imports: [],
+  imports: [Header],
   templateUrl: './accueil.html',
   styleUrl: './accueil.css'
 })

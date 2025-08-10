@@ -7,14 +7,14 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class Auth {
-  private apiUrl = 'http://localhost:3000/api/users';
+  private apiUrl = 'http://localhost:3000/api';
   private router = inject(Router)
   isLoggedIn = signal(this.hasValidToken());
 
   constructor(private http: HttpClient) {}
 
   login(email: string, password: string) {
-    return this.http.post<{ token: string }>(`${this.apiUrl}/login`, { email, password })
+    return this.http.post<{ token: string }>(`${this.apiUrl}/auth/login`, { email, password })
       .pipe(
         tap(response => {
           localStorage.setItem('token', response.token);
@@ -45,7 +45,7 @@ export class Auth {
   }
 
   register(email: string, password: string, alias: string, userName: string, dateOfBirth: string): Observable<any> {
-    return this.http.post(`${this.apiUrl}/register`, {
+    return this.http.post(`${this.apiUrl}/users`, {
       email,
       password,
       alias,

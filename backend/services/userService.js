@@ -14,9 +14,7 @@ exports.getAllUsers = async () => {
 };
 
 exports.getUserByEmail = async (email) => {
-    const user = await User.findOne({ email });
-    if(!user) throw new Error('Utilisateur introuvable')
-    return user;
+    return await User.findOne({ email });
 }
 
 exports.getUserById = async (id) => {
