@@ -20,7 +20,8 @@ const recetteSchema = new mongoose.Schema({
   nutritionValues: [{ type: mongoose.Schema.Types.ObjectId, ref: 'nutritionValues' }],
   category: { type: mongoose.Schema.Types.ObjectId, ref: 'Categorys' },
   diet: { type: mongoose.Schema.Types.ObjectId, ref:'Diet' },
-  origin: { type: mongoose.Schema.Types.ObjectId, ref: 'Origins' }
+  origin: { type: mongoose.Schema.Types.ObjectId, ref: 'Origins' },
+  userCreated: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 }, { timestamps: true });
 
 module.exports = mongoose.model('Recette', recetteSchema);
