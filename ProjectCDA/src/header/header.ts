@@ -1,15 +1,17 @@
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
 import { Auth } from '../service/auth';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
 export class Header {
   showUserMenu = false
+  @Input() h3Header: string = ''
 
   @ViewChild('userMenu') userMenuRef?: ElementRef;
 

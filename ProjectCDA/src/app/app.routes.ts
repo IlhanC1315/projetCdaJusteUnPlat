@@ -3,11 +3,15 @@ import { Login } from '../login/login';
 import { Register } from '../register/register';
 import { PageWelcome } from '../page-welcome/page-welcome';
 import { Accueil } from '../accueil/accueil';
+import { Profil } from '../profil/profil';
+import { authGard } from '../service/authGuard';
 
 export const routes: Routes = [
     { path: 'login', component: Login },
     { path: 'register', component: Register },
     { path: 'welcome', component: PageWelcome },
-    { path: '', redirectTo: '/welcome', pathMatch: 'full'},
-    { path: 'accueil', component: Accueil}
+    { path: 'accueil', canActivate: [authGard], loadComponent: () => import('../accueil/accueil').then(m => m.Accueil)},
+    { path: '', redirectTo: '/accueil', pathMatch: 'full' },
+    { path: '**', redirectTo: '/welcome'},
+    { path: 'profil', component: Profil},
 ];

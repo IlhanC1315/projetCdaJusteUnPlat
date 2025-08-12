@@ -17,9 +17,12 @@ export class Login {
   email = '';
   password = '';
   loading = signal(false)
-  errorMessage = '';
+  errorMessage = signal('');
 
   onSubmit() {
+    if(!this.email || !this.password) return;
+    this.loading.set(true)
+    this.errorMessage.set('')
     this.authService.login(this.email, this.password).subscribe({
       next: () => {
         this.loading.set(false);
@@ -28,7 +31,7 @@ export class Login {
       },
       error: () => {
         this.loading.set(false);
-        this.errorMessage = 'Échec de la connexion. Vérifie ton email et mot de passe.'
+        this.errorMessage.set('Échec de la connexion. Vérifie ton email et mot de passe.')
       }
     });
   }

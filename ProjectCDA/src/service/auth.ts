@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 })
 export class Auth {
   private apiUrl = 'http://localhost:3000/api';
-  private router = inject(Router)
-  isLoggedIn = signal(this.hasValidToken());
+  private router = inject(Router);
+  private http = inject(HttpClient);
 
-  constructor(private http: HttpClient) {}
+  isLoggedIn = signal(this.hasValidToken());
 
   login(email: string, password: string) {
     return this.http.post<{ token: string }>(`${this.apiUrl}/auth/login`, { email, password })
@@ -33,16 +33,16 @@ export class Auth {
     return localStorage.getItem('token');
   }
 
-  private hasValidToken() {
+  private hasValidToken(): boolean {
     const token = this.getToken();
     if (!token) return false;
     try {
       const playload = JSON.parse(atob(token.split('.')[1]));
       return playload.exp * 1000 > Date.now();
-    } catch (err) {
+    } catch {
       return false;
     }
-  }
+  };
 
   register(email: string, password: string, alias: string, userName: string, dateOfBirth: string): Observable<any> {
     return this.http.post(`${this.apiUrl}/users`, {

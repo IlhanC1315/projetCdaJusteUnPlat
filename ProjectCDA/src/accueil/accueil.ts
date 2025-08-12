@@ -14,6 +14,10 @@ export class Accueil {
   private http = inject(HttpClient);
 
   isLoggedIn = this.authService.isLoggedIn;
-  data: any = null
+  data: any = null;
+
+  loadData() {
+    this.http.get
+  }
   
 }

@@ -4,8 +4,8 @@
 
     <!-- Conteneur principal avec flex pour h3 + icônes -->
     <div class="flex justify-between items-center mt-8">
-        <h3 class="text-[32px] font-bold mt-5 text-orangeJUP">Accueil</h3>
-
+        <h3 class="text-[32px] font-bold mt-5 text-orangeJUP">{{h3Header}}</h3>
+    
         <div class="flex items-center gap-4 mt-5">
             <img class="w-6 h-6 cursor-pointer" src="assets/icones/Search.svg" alt="">
             <img class="w-6 h-6 cursor-pointer" src="assets/icones/User.svg" alt="" (click)="toggleUserMenu()">
@@ -13,7 +13,9 @@
                 <button class="w-full text-left py-2 hover:bg-gray-100" (click)="logout()">
                     Déconnexion
                 </button>
-                <!-- Tu peux rajouter d'autres boutons ici -->
+                <button class="w-full text-left py-2 hover:bg-gray-100">
+                    <a routerLink="/profil">Profil</a>
+                </button>
             </div>
         </div>
     </div>
