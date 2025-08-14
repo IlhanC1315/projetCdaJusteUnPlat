@@ -20,7 +20,7 @@ exports.login = async (req, res ,next) => {
         }
 
         const token = jwt.sign(playload, process.env.JWT_SECRET, { expiresIn: '2h' });
-        res.status(200).json({ token: `Bearer ${token}`})
+        res.status(200).json({ token });
     } catch (err) {
         next(err)
     }

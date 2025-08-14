@@ -11,7 +11,8 @@ export const routes: Routes = [
     { path: 'register', component: Register },
     { path: 'welcome', component: PageWelcome },
     { path: 'accueil', canActivate: [authGard], loadComponent: () => import('../accueil/accueil').then(m => m.Accueil)},
+    { path: 'profil', component: Profil, canActivate: [authGard] },
     { path: '', redirectTo: '/accueil', pathMatch: 'full' },
-    { path: '**', redirectTo: '/welcome'},
-    { path: 'profil', component: Profil},
+    { path: '**', redirectTo: '/welcome' }
 ];
+

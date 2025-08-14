@@ -1,5 +1,6 @@
 import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
 import { Auth } from '../service/auth';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -7,34 +8,34 @@ import { RouterModule } from '@angular/router';
   selector: 'app-header',
   imports: [CommonModule, RouterModule],
   templateUrl: './header.html',
-  styleUrl: './header.css'
+  styleUrls: ['./header.css']
 })
 export class Header {
-  showUserMenu = false
-  @Input() h3Header: string = ''
-
+  showUserMenu = false;
+  @Input() h3Header: string = '';
   @ViewChild('userMenu') userMenuRef?: ElementRef;
 
-  constructor(private auth: Auth, private eRef: ElementRef) {}
+  constructor(private auth: Auth, private eRef: ElementRef, private router: Router) {}
 
   toggleUserMenu() {
     this.showUserMenu = !this.showUserMenu;
   }
 
   logout() {
-    this.auth.logout()
+    this.auth.logout();
   }
 
   @HostListener('document:click', ['$event'])
   handleClickOutside(event: MouseEvent) {
     const target = event.target as HTMLElement;
 
-    //si clic en dehors de l'icone et du menu la pop up se ferme
-    const clickedInside = this.eRef.nativeElement.contains(target) ||
-      this.userMenuRef?.nativeElement.contains(target);
-
-      if (!clickedInside) {
+    // Ferme le menu seulement si clic en dehors
+    if (
+      this.userMenuRef?.nativeElement &&
+      !this.userMenuRef.nativeElement.contains(target) &&
+      !this.eRef.nativeElement.contains(target)
+    ) {
       this.showUserMenu = false;
     }
-}
+  }
 }

@@ -1,1 +1,40 @@
 <app-header h3Header="Mon Profil"></app-header>
+<div *ngIf="user" class="profile-container">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Juste<span class="highlight">UnPlat</span></div>
+    <h1>Mon Profil</h1>
+    <div class="icons">
+      <i class="icon-search"></i>
+      <i class="icon-user"></i>
+    </div>
+  </header>
+
+  <!-- Profil utilisateur -->
+  <section class="user-info">
+    <img class="profile-pic" [src]="user.profileImage || 'assets/default-avatar.png'" alt="photo de profil" />
+    <h2>{{ user.alias }}</h2>
+    <p class="username">@{{ user.userName }}</p>
+
+    <div class="stats">
+      <div><strong>{{ user.followingLength || 0 }}</strong><span>Suivis</span></div>
+      <div><strong>{{ user.followersLength || 0 }}</strong><span>Follower</span></div>
+      <div><strong>{{ user.recipeListe?.length || 0 }}</strong><span>recettes</span></div>
+    </div>
+
+    <p class="bio">{{ user.description || 'Aucune description.' }}</p>
+  </section>
+
+  <!-- Bouton créer recette -->
+  <button class="create-recipe-btn">+ Crée une nouvelle recette</button>
+
+  <!-- Mes recettes -->
+  <section class="recipes">
+    <h3>Mes recettes</h3>
+    <!-- Ici tu boucles sur les recettes -->
+    <div *ngFor="let recette of user.recipeListe" class="recipe-card">
+      {{ recette.title || 'Recette sans titre' }}
+    </div>
+  </section>
+</div>

@@ -11,14 +11,16 @@ export class Auth {
   private router = inject(Router);
   private http = inject(HttpClient);
 
+  // Signal qui stocke l'état de connexion
   isLoggedIn = signal(this.hasValidToken());
 
   login(email: string, password: string) {
     return this.http.post<{ token: string }>(`${this.apiUrl}/auth/login`, { email, password })
       .pipe(
         tap(response => {
+          // Stocke uniquement le JWT brut
           localStorage.setItem('token', response.token);
-          this.isLoggedIn.set(true)
+          this.isLoggedIn.set(true);
         })
       );
   }
@@ -29,7 +31,7 @@ export class Auth {
     this.router.navigate(['/login']);
   }
 
-  getToken() {
+  getToken(): string | null {
     return localStorage.getItem('token');
   }
 
@@ -37,12 +39,12 @@ export class Auth {
     const token = this.getToken();
     if (!token) return false;
     try {
-      const playload = JSON.parse(atob(token.split('.')[1]));
-      return playload.exp * 1000 > Date.now();
+      const payload = JSON.parse(atob(token.split('.')[1]));
+      return payload.exp * 1000 > Date.now();
     } catch {
       return false;
     }
-  };
+  }
 
   register(email: string, password: string, alias: string, userName: string, dateOfBirth: string): Observable<any> {
     return this.http.post(`${this.apiUrl}/users`, {
@@ -52,5 +54,10 @@ export class Auth {
       userName,
       dateOfBirth,
     });
+  }
+
+  getProfile(): Observable<any> {
+    // Pas besoin de mettre le Bearer ici, l'intercepteur s'en charge
+    return this.http.get(`${this.apiUrl}/auth/me`);
   }
 }
